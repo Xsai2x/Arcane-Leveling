@@ -1,157 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arcane Mage Leveling Guide 1–60 – WoW: Forever</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="A practical Arcane Mage leveling guide for WoW: Forever, from level 1 to 60.">
+  <title>Arcane Fieldbook — Mage Leveling · WoW: Forever</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>window.iconFallback='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Cdefs%3E%3ClinearGradient id="g" x2="1" y2="1"%3E%3Cstop stop-color="%235f82aa"/%3E%3Cstop offset="1" stop-color="%231c2938"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="64" height="64" rx="8" fill="url(%23g)"/%3E%3Cpath d="M32 9 37 27 55 32 37 37 32 55 27 37 9 32 27 27z" fill="none" stroke="%23c8e0ff" stroke-width="2"/%3E%3C/svg%3E';</script>
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Arcane Fieldbook home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 23.2 16.8 36.5 20l-13.3 3.2L20 36.5l-3.2-13.3L3.5 20l13.3-3.2L20 3.5Z" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="20" r="3" fill="currentColor"/><path d="M30.5 5v5M28 7.5h5M8 29v4M6 31h4" stroke="currentColor" stroke-width="1.2"/></svg></span>
+      <span class="brand-copy"><strong>ARCANE <i>FIELDBOOK</i></strong><small>WOW: FOREVER <b>·</b> MAGE / 01</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Guide sections">
+      <a href="#leveling">Leveling</a><a href="#rotation">Rotation</a><a href="#talents">Talents</a><a href="#spells">Spells &amp; ranks</a><a href="#gear">Gear</a><a href="#professions">Professions</a><a href="#consumables">Consumables</a><a href="#tips">Tips</a><a href="#sources">Sources</a>
+    </nav>
+    <a class="header-cta" href="#leveling"><span>Start at level 1</span><span aria-hidden="true">↗</span></a>
+  </header>
 
-<header>
-  <h1>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.4 6.9H21l-5.4 4.2 2 6.9-5.6-4.3-5.6 4.3 2-6.9L3 8.9h6.6z"/></svg>
-    Arcane Mage <span class="sub">WoW: Forever · Leveling Guide 1–60</span>
-  </h1>
-  <nav>
-    <a href="#leveling">Leveling</a>
-    <a href="#rotation">Rotation</a>
-    <a href="#talents">Talents</a>
-    <a href="#spells">Spells & Ranks</a>
-    <a href="#gear">Gear</a>
-    <a href="#mana">Mana</a>
-    <a href="#faq">FAQ</a>
-    <a href="#sources">Sources</a>
-  </nav>
-</header>
+  <main id="top">
+    <section class="hero page-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> THE LEVELING DOSSIER <span class="eyebrow-rule"></span> 01—60</div>
+        <h1 id="hero-title">A little <em>arcane.</em><br>A lot of momentum.</h1>
+        <p class="hero-lede">A field-tested path for your next Mage: learn the rhythm, spend mana with intent, and make every pull feel like a spell well placed.</p>
+        <div class="hero-actions"><a class="button-primary" href="#leveling">Find your level <span>↓</span></a><a class="text-link" href="#rotation">Read the quick rotation <span>↗</span></a></div>
+        <div class="hero-meta"><span><b>CLASS</b> Mage</span><span><b>SPECIALIZATION</b> Arcane</span><span><b>RANGE</b> 1—60</span></div>
+      </div>
+      <div class="hero-art" aria-label="Arcane star chart illustration" role="img">
+        <div class="art-grid"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="rune rune-a">✳</div><div class="rune rune-b">✧</div><div class="rune rune-c">✦</div>
+        <div class="orb-core"><div class="orb-inner"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M50 5 59 39 94 50 59 59 50 95 41 59 6 50 41 39 50 5Z" stroke="currentColor" stroke-width="1.1"/><circle cx="50" cy="50" r="9" fill="currentColor"/><circle cx="50" cy="50" r="22" stroke="currentColor" stroke-width=".8" opacity=".6"/></svg></div></div>
+        <div class="art-label label-top"><span>ARCANE STUDY</span><b>VOL. 01</b></div><div class="art-label label-bottom"><span>FIELD NOTES</span><b>AZURE // 60</b></div>
+        <span class="art-cross cross-a">+</span><span class="art-cross cross-b">+</span><span class="art-cross cross-c">+</span>
+      </div>
+      <div class="hero-index"><span>FIELD GUIDE</span><span>01 / 08</span><span>UPDATED 11.04.2026</span></div>
+    </section>
 
-<main>
+    <section class="section-block page-wrap" id="leveling">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">01 <span>— THE ROUTE</span></div><h2>Level by level</h2></div><p>Choose your bracket for a focused plan. Keep your wand working between casts, and train new ranks whenever you visit town.</p></div>
+      <div class="level-card panel">
+        <div class="level-rail" role="tablist" aria-label="Level brackets">
+          <button class="level-tab is-active" id="tab-1" role="tab" aria-selected="true" aria-controls="level-panel" data-level="1-10"><span>01</span><strong>1—10</strong><small>FIRST SPARK</small></button>
+          <button class="level-tab" id="tab-11" role="tab" aria-selected="false" aria-controls="level-panel" data-level="11-20"><span>02</span><strong>11—20</strong><small>FIND THE FLOW</small></button>
+          <button class="level-tab" id="tab-21" role="tab" aria-selected="false" aria-controls="level-panel" data-level="21-30"><span>03</span><strong>21—30</strong><small>BUILD POWER</small></button>
+          <button class="level-tab" id="tab-31" role="tab" aria-selected="false" aria-controls="level-panel" data-level="31-40"><span>04</span><strong>31—40</strong><small>GO DEEPER</small></button>
+          <button class="level-tab" id="tab-41" role="tab" aria-selected="false" aria-controls="level-panel" data-level="41-50"><span>05</span><strong>41—50</strong><small>REFINE THE ART</small></button>
+          <button class="level-tab" id="tab-51" role="tab" aria-selected="false" aria-controls="level-panel" data-level="51-60"><span>06</span><strong>51—60</strong><small>MASTER THE WEAVE</small></button>
+        </div>
+        <div class="level-detail" id="level-panel" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+          <div class="level-detail-top"><span class="mini-label" id="level-phase">YOUR OPENING CHAPTER</span><span class="level-range" id="level-range">LVL 01 — 10</span></div>
+          <h3 id="level-title">Learn the cadence</h3><p id="level-description">Start with reliable, low-cost casts and let your wand finish the job. Your early levels are about staying on the move without draining your whole mana bar on a single target.</p>
+          <div class="level-notes" id="level-notes"><div><span class="note-icon">✳</span><span><b>CORE LOOP</b><small>Frostbolt to slow, then wand while the target closes.</small></span></div><div><span class="note-icon">⌁</span><span><b>TRAIN NEXT</b><small>Pick up new spell ranks and conjured water in town.</small></span></div><div><span class="note-icon">◉</span><span><b>WATCH FOR</b><small>Use Frost Nova to create room; avoid pulling extra mobs.</small></span></div></div>
+        </div>
+      </div>
+      <p class="section-footnote"><span class="footnote-mark">i</span> Level bracket notes are a practical overview. Spell availability and exact tuning may vary by WoW: Forever ruleset.</p>
+    </section>
 
-<section id="intro">
-  <p><strong>One page combining the WoWHead and Mobalytics Arcane Mage leveling guides:</strong> leveling path, rotation, talent tree, spell ranks, gear priorities and mana management for WoW: Forever (vanilla-based, level cap 60).</p>
-  <p class="note">Valid for WoW: Forever — not Season of Discovery. Runes/glyphs from other versions do not apply. Last updated: 04.11.2026</p>
-</section>
+    <section class="split-section page-wrap" id="rotation">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">02 <span>— IN THE MOMENT</span></div><h2>Make each cast count</h2></div><p>Arcane rewards steady pressure and a good sense of when to stop spending.</p></div>
+      <div class="rotation-layout">
+        <div class="rotation-list panel">
+          <article class="rotation-step"><span class="step-no">01</span><div><h3><img class="spell-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_arcane_blast.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Build with Arcane Blast</h3><p>Open with Arcane Blast and build its damage stacks while you have the mana to support them.</p></div><span class="step-glyph">✧</span></article>
+          <article class="rotation-step"><span class="step-no">02</span><div><h3><img class="spell-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_starfall.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Spend Clearcasting</h3><p>When Arcane Concentration grants Clearcasting, use Arcane Missiles for a powerful, mana-free channel.</p></div><span class="step-glyph">⌁</span></article>
+          <article class="rotation-step"><span class="step-no">03</span><div><h3><img class="spell-icon" src="https://wow.zamimg.com/images/wow/icons/large/ability_mage_arcanebarrage.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Close with Arcane Barrage</h3><p>At the end of your burst window, release Arcane Barrage—especially before moving or when a target is nearly down.</p></div><span class="step-glyph">↗</span></article>
+          <article class="rotation-step"><span class="step-no">04</span><div><h3><img class="spell-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_enchantarmor.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Save Presence of Mind</h3><p>Pair the instant-cast window with a high-value spell, or keep it ready when you need to reposition fast.</p></div><span class="step-glyph">◌</span></article>
+          <article class="rotation-step"><span class="step-no">05</span><div><h3><img class="spell-icon" src="https://wow.zamimg.com/images/wow/icons/large/inv_potion_76.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Keep a potion for the pinch</h3><p>Use mana potions when they prevent downtime or secure a tough pull—not automatically on every fight.</p></div><span class="step-glyph">◇</span></article>
+        </div>
+        <aside class="rotation-aside"><div class="aside-overline">THE SHORT VERSION</div><div class="rotation-quote">Build.<br><em>Proc.</em><br>Release.</div><div class="aside-line"></div><p>Arcane Blast stacks hit harder—and cost more. Let your Clearcasting procs and mana pool dictate how long you stay in the burst.</p><a class="inline-arrow" href="#mana">Tune your mana plan <span>↗</span></a></aside>
+      </div>
+    </section>
 
-<section id="leveling">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20h16v2H4zM6 16h3v-6H6zm5 0h3V6h-3zm5 0h3V10h-3z"/></svg>
-    Leveling Path
-  </h2>
-  <div class="tabs" id="levelTabs">
-    <button data-tab="1-10" class="active">1–10</button>
-    <button data-tab="11-20">11–20</button>
-    <button data-tab="21-30">21–30</button>
-    <button data-tab="31-40">31–40</button>
-    <button data-tab="41-50">41–50</button>
-    <button data-tab="51-60">51–60</button>
-  </div>
-  <div class="tab-content" id="tabContent"></div>
-</section>
+    <section class="section-block page-wrap" id="talents">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">03 <span>— THE BUILD</span></div><h2>Talent roadmap</h2></div><p>Spend points in a classic three-tree grid. The 20/0/0 snapshot is preloaded; rank and tier rules apply up to the level-60 cap.</p></div>
+      <div class="calculator panel">
+        <div class="calculator-toolbar"><div><span class="calc-label">CLASSIC TALENT CALCULATOR</span><h3>Choose your next point</h3></div><div class="calc-totals"><strong id="total-points">20</strong><span>/ 51 POINTS</span><button class="reset-talents" id="reset-talents" type="button">RESET BUILD</button></div></div>
+        <div class="tree-columns" id="tree-columns" aria-label="Mage talent trees"></div>
+        <div class="calc-legend"><span><i class="legend-dot spent"></i>Rank invested</span><span><i class="legend-dot locked"></i>Tier locked until 5 points in the prior tier</span><span>Click to add · right-click to remove</span></div>
+      </div>
+      <div class="build-notes"><div class="build-heading"><span>RECOMMENDED ROUTE · AS SUPPLIED</span><span class="build-points">20 / 0 / 0 START</span></div><div class="build-timeline" id="build-timeline"></div><p class="section-footnote"><span class="footnote-mark">i</span>The supplied level-by-level route sums to 54 rank points, while levels 10–60 provide 51. Several listed talents (including Wand Specialization, Precision, Missile Barrage, Accelerant, Incineration, and Arcane Geometry) are not in the vanilla Mage trees. The calculator therefore loads a valid 20-point vanilla Arcane snapshot; the full supplied route is preserved here as a reference, not silently altered.</p></div>
+    </section>
 
-<section id="rotation">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4a8 8 0 1 0 8 8h-2a6 6 0 1 1-6-6zm1-2h-2v6l5 3 1-1.7-4-2.3z"/></svg>
-    Rotation
-  </h2>
-  <ol class="rotation">
-    <li>Build <strong>Arcane Blast</strong> up to 4 stacks (don't force 4 blindly — procs come first).</li>
-    <li>Cast <strong>Arcane Missiles</strong> whenever Clearcasting procs.</li>
-    <li>Spend stacks with <strong>Arcane Barrage</strong>.</li>
-    <li>Use <strong>Presence of Mind</strong> + instant cast for burst windows.</li>
-    <li>Drink / use mana potions early enough — never sit at 0 mana mid-fight.</li>
-  </ol>
-</section>
+    <section class="section-block page-wrap" id="spells">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">04 <span>— YOUR SPELLBOOK</span></div><h2>Ranks worth watching</h2></div><p>These are notable milestones, not a complete trainer list. Visit your class trainer regularly to learn available upgrades.</p></div>
+      <div class="table-wrap panel"><table><thead><tr><th>LEVEL</th><th>SPELL</th><th>WHY IT MATTERS</th><th>ROLE</th></tr></thead><tbody>
+        <tr><td class="table-level">20</td><td><span class="spell-name"><img class="table-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_starfall.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Arcane Missiles</span></td><td>Reliable channel; excellent value after a Clearcasting proc.</td><td><span class="role-tag">CHANNEL</span></td></tr>
+        <tr><td class="table-level">22</td><td><span class="spell-name"><img class="table-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_arcane_blast.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Arcane Explosion</span></td><td>Instant area damage when several enemies are safely in range.</td><td><span class="role-tag">AOE</span></td></tr>
+        <tr><td class="table-level">30</td><td><span class="spell-name"><img class="table-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_arcane_blast.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Arcane Blast</span></td><td>Core single-target builder for your Arcane burst rhythm.</td><td><span class="role-tag role-blue">BUILDER</span></td></tr>
+        <tr><td class="table-level">40</td><td><span class="spell-name"><img class="table-icon" src="https://wow.zamimg.com/images/wow/icons/large/ability_mage_arcanebarrage.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Arcane Barrage</span></td><td>Instant release tool; useful to finish or cast on the move.</td><td><span class="role-tag">FINISHER</span></td></tr>
+        <tr><td class="table-level">40</td><td><span class="spell-name"><img class="table-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_enchantarmor.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Presence of Mind</span></td><td>Instant-cast setup for a timely burst or emergency response.</td><td><span class="role-tag">COOLDOWN</span></td></tr>
+        <tr><td class="table-level">60</td><td><span class="spell-name"><img class="table-icon" src="https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerwordshield.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Arcane Power</span></td><td>Capstone cooldown that amplifies your damage for a short window.</td><td><span class="role-tag role-blue">CAPSTONE</span></td></tr>
+      </tbody></table></div>
+      <p class="section-footnote"><span class="footnote-mark">i</span> Spell ranks and acquisition levels can differ between versions. Confirm the exact rank at your trainer in WoW: Forever.</p>
+    </section>
 
-<section id="talents">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>
-    Talent Tree (Arcane, 51 points)
-  </h2>
-  <p class="note">Standard leveling build: full Arcane tree first, then Frost for <strong>Improved Frostbolt</strong> / utility. Key picks by tier:</p>
-  <div class="talent-grid">
-    <div class="talent"><span class="tier">Tier 1 · 5 pts</span>Arcane Subtlety (5/5) → Arcane Focus (5/5)</div>
-    <div class="talent"><span class="tier">Tier 2 · 10 pts</span>Improved Arcane Missiles (5/5)</div>
-    <div class="talent"><span class="tier">Tier 3 · 15 pts</span>Arcane Concentration (5/5) — Clearcasting procs</div>
-    <div class="talent"><span class="tier">Tier 4 · 20 pts</span>Magic Attunement (2/2) → Improved Arcane Explosion (3/3)</div>
-    <div class="talent"><span class="tier">Tier 5 · 25 pts</span>Arcane Resilience (1/1)</div>
-    <div class="talent"><span class="tier">Tier 6 · 30 pts</span>Presence of Mind — instant next spell</div>
-    <div class="talent"><span class="tier">Tier 7 · 35 pts</span>Arcane Meditation (3/3) — mana regen while casting</div>
-    <div class="talent"><span class="tier">Tier 8 · 40 pts</span>Improved Blink (2/2)</div>
-    <div class="talent"><span class="tier">Tier 9 · 45 pts</span>Spell Power (2/2)</div>
-    <div class="talent capstone"><span class="tier">Tier 11 · 51 pts</span><strong>Arcane Power</strong> — capstone, +30% damage / -30% cost</div>
-  </div>
-  <p class="note">Remaining points after Arcane: Frost tree for Improved Frostbolt (faster cast) and Ice Block / Frost Nova utility.</p>
-</section>
+    <section class="lower-grid page-wrap">
+      <article class="section-block compact-block" id="gear"><div class="eyebrow section-kicker">05 <span>— EQUIP WITH PURPOSE</span></div><h2>Keep the stats simple</h2><p class="compact-intro">Leveling gear should make your casts hit harder and keep your next pull comfortable.</p>
+        <div class="priority-stack"><div class="priority-item priority-first"><span class="priority-number">01</span><span><b><img class="stat-icon" src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_gem_01.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Intellect</b><small>More mana and a stronger foundation for spell power.</small></span><span class="priority-arrow">↑</span></div><div class="priority-item"><span class="priority-number">02</span><span><b><img class="stat-icon" src="https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_talisman_03.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Spirit</b><small>Helps your mana return between pulls.</small></span><span class="priority-arrow">↗</span></div><div class="priority-item"><span class="priority-number">03</span><span><b><img class="stat-icon" src="https://wow.zamimg.com/images/wow/icons/large/inv_shirt_06.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback">Stamina</b><small>A buffer for mistakes, adds, and solo play.</small></span><span class="priority-arrow">↗</span></div></div>
+        <div class="priority-equation">INTELLECT <span>›</span> SPIRIT <span>›</span> STAMINA</div>
+      </article>
+      <article class="section-block compact-block mana-block" id="mana"><div class="eyebrow section-kicker">06 <span>— THE LONG GAME</span></div><h2>Mana is tempo</h2><p class="compact-intro">Your best pace is the one that gets you to the next mob with enough fuel to finish the pull.</p>
+        <ul class="mana-tips"><li><span class="tip-symbol">01</span><span><b>Use the free cast.</b> Arcane Concentration procs are a natural cue to spend on Arcane Missiles.</span></li><li><span class="tip-symbol">02</span><span><b>Stop before empty.</b> A short wand window can cost less time than a full drink break.</span></li><li><span class="tip-symbol">03</span><span><b>Drink between pulls.</b> Conjured water keeps recovery close; sit down while looting or travelling.</span></li><li><span class="tip-symbol">04</span><span><b>Use consumables deliberately.</b> Save mana potions for hard fights or when uptime matters.</span></li></ul>
+      </article>
+    </section>
 
-<section id="spells">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M8 8h8v2H8zm0 4h8v2H8zm0 4h5v2H8z"/></svg>
-    Spell Ranks to Train
-  </h2>
-  <table class="spell-table">
-    <tr><th>Spell</th><th>Level</th><th>Note</th></tr>
-    <tr><td>Arcane Missiles</td><td>20</td><td>Core damage, procs Clearcasting</td></tr>
-    <tr><td>Arcane Explosion</td><td>22</td><td>AoE, mana-heavy — use sparingly while leveling</td></tr>
-    <tr><td>Arcane Blast</td><td>30</td><td>Stack builder, main filler</td></tr>
-    <tr><td>Arcane Barrage</td><td>40</td><td>Stack spender</td></tr>
-    <tr><td>Presence of Mind</td><td>40</td><td>Talent, instant cast</td></tr>
-    <tr><td>Arcane Power</td><td>60</td><td>Capstone burst cooldown</td></tr>
-    <tr><td>Mana Shield / Dampen Magic</td><td>as needed</td><td>Survivability</td></tr>
-  </table>
-</section>
+    <section class="section-block page-wrap" id="professions">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">07 <span>— TRADECRAFT</span></div><h2>Professions that pay back</h2></div><p>Useful while leveling and easy to fit into a self-found or auction-house route.</p></div>
+      <div class="utility-grid">
+        <article class="utility-card panel"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_fabric_silk_02.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback"><div><span class="utility-kicker">RECOMMENDED · CLOTH</span><h3>Tailoring</h3><p>Turn dropped cloth into bags and caster pieces. Keep upgrades you will wear; sell or disenchant the rest.</p></div></article>
+        <article class="utility-card panel"><img src="https://wow.zamimg.com/images/wow/icons/large/trade_engraving.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback"><div><span class="utility-kicker">RECOMMENDED · GEAR</span><h3>Enchanting</h3><p>Disenchant unwanted greens for materials and add affordable stats to gear you will keep for a while.</p></div></article>
+        <article class="utility-card panel"><img src="https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback"><div><span class="utility-kicker">OPTIONAL · GADGETS</span><h3>Engineering</h3><p>Extra utility, explosives and escape tools can help with solo play, but it takes materials and competes with gathering.</p></div></article>
+      </div>
+    </section>
+    <section class="section-block page-wrap" id="consumables">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">08 <span>— PACK YOUR BAGS</span></div><h2>Small supplies, smoother pulls</h2></div><p>Carry practical consumables; use them when they save real downtime or stabilize a hard fight.</p></div>
+      <div class="consumable-grid">
+        <article class="supply-card"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_potion_76.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback"><div><b>Mana Potions</b><p>Use on a difficult pull or when continuing is faster than drinking. Keep one in an accessible bag slot.</p></div></article>
+        <article class="supply-card"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_fabric_mageweave_01.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback"><div><b>Mageweave &amp; food buffs</b><p>Use Mageweave bandages for emergency recovery if trained; food buffs are a low-effort boost before longer sessions.</p></div></article>
+        <article class="supply-card"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_rune_01.jpg" alt="" onerror="this.onerror=null;this.src=window.iconFallback"><div><b>Dark Runes</b><p>Optional emergency mana restoration, typically costly and limited. Save for a dangerous situation, not routine pulls.</p></div></article>
+      </div>
+    </section>
+    <section class="section-block page-wrap" id="tips">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">09 <span>— FIELDCRAFT</span></div><h2>Tips &amp; tricks</h2></div><p>Simple habits for steady experience, fewer corpse runs and less time spent drinking.</p></div>
+      <div class="tips-grid">
+        <article class="tip-card"><span>01 / MANA</span><h3>Manage the bar, not the meter</h3><p>Do not force a full burst every pull. Use your wand or lower-cost casts when safe, drink while looting, and save potions for meaningful pressure.</p></article>
+        <article class="tip-card"><span>02 / PULLS</span><h3>Start small, then scale</h3><p>One controlled target is the default. Add enemies only when you have space, cooldowns and an escape route; avoid fighting near respawns.</p></article>
+        <article class="tip-card"><span>03 / AOE</span><h3>AoE has rules</h3><p>Group enemies deliberately and check the surroundings first. Arcane Explosion is close-range; use slows, Frost Nova and Blink to manage danger, not to justify an oversized pull.</p></article>
+        <article class="tip-card"><span>04 / QUESTS &amp; GOLD</span><h3>Follow efficient loops</h3><p>Stack nearby quests, sell vendor trash, keep bags clear, and avoid long detours for low-value objectives. Learn flight paths and keep a little gold for training and water.</p></article>
+      </div>
+    </section>
+    <section class="section-block page-wrap faq-section" id="faq">
+      <div class="section-heading"><div><div class="eyebrow section-kicker">10 <span>— QUICK ANSWERS</span></div><h2>Before you head out</h2></div><p>A few answers to keep your leveling route flexible.</p></div>
+      <div class="faq-list">
+        <details><summary><span class="faq-count">Q 01</span><span>Is Arcane a good leveling specialization?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>It can be a strong and satisfying path, with useful burst and efficient Clearcasting windows. Your comfort with mana pacing matters as much as the build; compare server-specific tuning and choose the rhythm you enjoy.</p></details>
+        <details><summary><span class="faq-count">Q 02</span><span>Should I use Arcane Blast on every cast?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>No need to tunnel on stacks. Arcane Blast gets more expensive as you build its effect, so let your mana pool, target health, and Clearcasting procs decide when to continue and when to release or reset.</p></details>
+        <details><summary><span class="faq-count">Q 03</span><span>What do I do when I run low on mana?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>Pause the expensive burst, use a wand where practical, then drink between pulls. Conjured water and mana potions help smooth recovery, but neither replaces sensible pull pacing.</p></details>
+        <details><summary><span class="faq-count">Q 04</span><span>Are the talent points and spell levels exact for Forever?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>Treat this as a leveling framework rather than a ruleset guarantee. Server patches may alter availability, balance, and rank acquisition. Check your in-game trainer and current server resources as you level.</p></details>
+      </div>
+    </section>
 
-<section id="gear">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
-    Gear Priorities
-  </h2>
-  <ul class="tips">
-    <li><strong>Intellect > Spirit > Stamina.</strong> Spell power and crit are secondary.</li>
-    <li>Weapon: highest DPS staff/wand available — early on a weapon is stronger than a cheap wand.</li>
-    <li>Don't over-invest in gear while leveling; quest rewards and dungeon drops are enough.</li>
-  </ul>
-</section>
-
-<section id="mana">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-4 12.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 2z"/></svg>
-    Mana Management
-  </h2>
-  <ul class="tips">
-    <li>Evocation / mana potions between pulls, not during.</li>
-    <li>Arcane Meditation lets you regen while casting — keep casting.</li>
-    <li>Skip Arcane Explosion on single targets to save mana.</li>
-  </ul>
-</section>
-
-<section id="faq">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>
-    FAQ
-  </h2>
-  <details><summary>Arcane or Frost for leveling?</summary><p>Arcane has the highest single-target burst with proper mana management; Frost is safer for solo play. This guide follows the Arcane path.</p></details>
-  <details><summary>Why not 4 Arcane Blast stacks every time?</summary><p>Clearcasting procs and cooldowns matter more than raw stacks — spending on Arcane Missiles/Barrage at the right moment is more damage.</p></details>
-  <details><summary>Does this work in dungeons?</summary><p>Yes — same rotation, just manage mana so the healer isn't drinking constantly.</p></details>
-</section>
-
-<section id="sources">
-  <h2>
-    <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7L12.5 18.5"/></svg>
-    Sources
-  </h2>
-  <ul class="sources">
-    <li><a href="https://www.wowhead.com/forever/guide/classes/mage/arcane/dps-leveling-tips">WoWHead – Arcane Mage DPS Leveling Tips</a></li>
-    <li><a href="https://mobalytics.gg/wow-forever/classes/arcane-mage-guide">Mobalytics – Arcane Mage Guide</a></li>
-    <li><a href="https://mobalytics.gg/wow-forever/classes/wrdlbrmpft-arcane-mage-leveling-guide">Mobalytics – Arcane Mage Leveling Guide</a></li>
-  </ul>
-</section>
-
-</main>
-
-<footer>
-  <p>Arcane Mage leveling compendium · WoW: Forever · Updated 04.11.2026</p>
-</footer>
-
-<script src="script.js" defer></script>
+    <section class="sources-section page-wrap" id="sources"><div class="sources-top"><div><div class="eyebrow section-kicker">11 <span>— FURTHER READING</span></div><h2>Cross-check your craft.</h2></div><p>Use these community guides for additional context and current server-specific details.</p></div>
+      <div class="source-links"><a href="https://www.wowhead.com/forever/guide/classes/mage/arcane/dps-leveling-tips" target="_blank" rel="noopener noreferrer"><span class="source-no">01 / WOWHEAD</span><b>Arcane Mage DPS Leveling Tips</b><span class="source-url">wowhead.com <i>↗</i></span></a><a href="https://mobalytics.gg/wow-forever/classes/arcane-mage-guide" target="_blank" rel="noopener noreferrer"><span class="source-no">02 / MOBALYTICS</span><b>Arcane Mage Guide</b><span class="source-url">mobalytics.gg <i>↗</i></span></a><a href="https://mobalytics.gg/wow-forever/classes/wrdlbrmpft-arcane-mage-leveling-guide" target="_blank" rel="noopener noreferrer"><span class="source-no">03 / MOBALYTICS</span><b>Arcane Mage Leveling Guide</b><span class="source-url">mobalytics.gg <i>↗</i></span></a></div>
+    </section>
+  </main>
+  <footer class="site-footer page-wrap"><a class="footer-brand" href="#top">✧ <span>ARCANE FIELDBOOK</span></a><span>WOW: FOREVER <b>·</b> A PLAYER-MADE FIELD GUIDE</span><span>11.04.2026 <a href="#top" aria-label="Back to top">↑</a></span></footer>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
